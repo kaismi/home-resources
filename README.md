@@ -1,5 +1,7 @@
 # home-resources
 
+Config files and tools to be used
+
 # Zsh install steps before config
 
 ```shell
