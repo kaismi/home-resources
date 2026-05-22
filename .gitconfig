@@ -1,0 +1,9 @@
+[core]
+	filemode = false
+	autocrlf = input
+[includeIf "gitdir:~/DEV/"]
+	path = ~/.gitconfig-personal
+[includeIf "gitdir:~/job/"]
+	path = ~/.gitconfig-work
+[credential]
+	helper = osxkeychain
