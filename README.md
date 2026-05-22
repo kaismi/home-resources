@@ -21,3 +21,5 @@ In terminal settings:
 In ~/.zshrc override config as here in example [.zshrc](.zshrc)
 
 In ~/.config/starship.toml override config as here in example [starship.toml](.config/starship.toml)
+
+Test
