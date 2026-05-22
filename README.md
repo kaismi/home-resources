@@ -9,9 +9,13 @@ brew install zoxide
 brew install direnv
 brew install font-fira-code-nerd-font
 ```
-In terminal settings
+In terminal settings:
 - Default Clear Dark
 - Text 
   - Font: FireCode Nerd Font Reg 14
   - Background: Opacity 80% and Blur 50%
 - Shell: When the shell exits "Close the window"
+
+In ~/.zshrc override config as here in example [.zshrc](.zshrc)
+
+In ~/.config/starship.toml override config as here in example [starship.toml](.config/starship.toml)
