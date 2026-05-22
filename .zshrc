@@ -17,4 +17,3 @@ eval "$(zoxide init zsh)"
 
 # Direnv
 eval "$(direnv hook zsh)"
-
