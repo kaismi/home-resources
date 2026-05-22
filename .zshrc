@@ -21,7 +21,7 @@ eval "$(direnv hook zsh)"
 # snowsql
 #alias snowsql=/Applications/SnowSQL.app/Contents/MacOS/snowsql
 
-# Java version to use if not latest wanted
+# Java version to use if not latest wanted installed with IntelliJ
 #export JAVA_HOME=$(/usr/libexec/java_home -v 25)
 
 # Config for kubectx
