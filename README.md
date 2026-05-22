@@ -21,3 +21,14 @@ In terminal settings:
 In ~/.zshrc override config as here in example [.zshrc](.zshrc)
 
 In ~/.config/starship.toml override config as here in example [starship.toml](.config/starship.toml)
+
+# Git config
+
+```
+[core]
+	filemode = false
+	autocrlf = input
+```
+File mode means not tracking permission changes e.g. +x
+
+Autocrlf to input means LF (\n conversion from) when commiting and best option for Windows and Unix mixed dev
