@@ -3,7 +3,7 @@
 	autocrlf = input
 [includeIf "gitdir:~/DEV/"]
 	path = ~/.gitconfig-personal
-[includeIf "gitdir:~/job/"]
-	path = ~/.gitconfig-work
+[includeIf "gitdir:~/job/ACME/"]
+	path = ~/.gitconfig-acme
 [credential]
 	helper = osxkeychain
