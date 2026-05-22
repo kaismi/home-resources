@@ -4,7 +4,28 @@
 # Inserts a blank line between shell prompts
 add_newline = false
 
-format = "$directory$character"
+format = """
+$os\
+$hostname\
+$directory\
+$git_branch\
+$git_status\
+$git_metrics\
+$python\
+$java\
+$nodejs\
+$rust\
+$golang\
+$php\
+$docker_context\
+$kubernetes\
+$aws\
+$azure\
+$gcloud\
+$package\
+$cmd_duration\
+$character
+"""
 
 # Replace the '❯' symbol in the prompt with '➜'
 [character] # The name of the module we are configuring is 'character'
