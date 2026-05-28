@@ -2,7 +2,7 @@
 	filemode = false
 	autocrlf = input
 [includeIf "gitdir:~/DEV/"]
-	path = ~/.gitconfig-personal
+	path = ~/.gitconfig-dev
 [includeIf "gitdir:~/job/ACME/"]
 	path = ~/.gitconfig-acme
 [credential]
