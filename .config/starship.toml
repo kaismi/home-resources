@@ -4,6 +4,9 @@
 # Inserts a blank line between shell prompts
 add_newline = false
 
+# Increase timeout from 500ms to 2s
+command_timeout = 2000
+
 # Disable line break only without new format
 [line_break]
 disabled = true
