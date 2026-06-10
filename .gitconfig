@@ -7,3 +7,4 @@
 	path = ~/.gitconfig-acme
 [credential]
 	helper = osxkeychain
+	useHttpPath = true
