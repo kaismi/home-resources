@@ -32,3 +32,11 @@ In ~/.config/starship.toml override config as here in example [starship.toml](.c
 File mode means not tracking permission changes e.g. +x
 
 Autocrlf to input means LF (\n conversion from) when commiting and best option for Windows and Unix mixed dev
+
+Support multiple PATs for e.g. github.com. Foreach http url new entry is created.
+
+```
+[credential]
+	helper = osxkeychain
+	useHttpPath = true
+```
