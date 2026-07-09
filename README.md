@@ -51,3 +51,18 @@ Tools
 - bak Create backup files for files before edit original
 - renameb Rename files in batch
 - rmdup Find and delete duplicate content files in directory
+
+```shell
+bak /etc/nginx/nginx.conf 
+# Created backup: /etc/nginx/nginx.conf.20260618-143015.bak
+bak ~/.bashrc ~/.vimrc # Multiple input
+# Created backup: /home/user/.bashrc.20260618-143027.bak
+# Created backup: /home/user/.vimrc.20260618-143027.bak    
+
+renameb ' ' '_' ~/Downloads # spaces to underscores
+renameb 'IMG_' 'photo_' ./ # prefix swap
+renameb '.JPEG' '.jpg' ./photos # extension normalization
+
+rmdup ~/Downloads # show duplicates only
+rmdup ~/Downloads --delete # show and delete duplicates
+```
