@@ -1,5 +1,7 @@
 autoload -Uz compinit && compinit
 
+export PATH="$HOME/bin:$PATH"
+
 eval "$(starship init zsh)"
 
 # Eza

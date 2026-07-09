@@ -1,0 +1,35 @@
+#!/usr/bin/env bash
+# rmdup — find (and optionally remove) duplicate files
+# Usage: rmdup [directory] [--delete]
+set -euo pipefail
+
+DIR="${1:-.}"
+DELETE="${2:-}"
+echo "Scanning for duplicates in: $DIR"
+echo ""
+declare -A SEEN
+DUPES=()
+while IFS= read -r -d '' file; do
+    hash=$(md5sum "$file" | cut -d' ' -f1)
+    if [[ -n "${SEEN[$hash]:-}" ]]; then
+        DUPES+=("$file")
+        echo "  DUP  $file"
+        echo "  OF   ${SEEN[$hash]}"
+        echo ""
+    else
+        SEEN[$hash]="$file"
+    fi
+done < <(find "$DIR" -maxdepth 1 -type f -print0 | sort -z)
+if [[ ${#DUPES[@]} -eq 0 ]]; then
+    echo "No duplicates found."
+    exit 0
+fi
+echo "Found ${#DUPES[@]} duplicate(s)."
+if [[ "$DELETE" == "--delete" ]]; then
+    for f in "${DUPES[@]}"; do
+        rm -v "$f"
+    done
+    echo "Deleted ${#DUPES[@]} duplicate(s)."
+else
+    echo "Run with --delete to remove duplicates."
+fi

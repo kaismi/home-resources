@@ -40,3 +40,14 @@ Support multiple PATs for e.g. github.com. Foreach http url new entry is created
 	helper = osxkeychain
 	useHttpPath = true
 ```
+# Support bin in home
+
+Copy bin files to ~/bin and add to path in ~/.zshrc
+
+```shell
+chmod +x ~/bin/* 
+```
+Tools
+- bak Create backup files for files before edit original
+- renameb Rename files in batch
+- rmdup Find and delete duplicate content files in directory
