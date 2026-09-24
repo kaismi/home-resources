@@ -40,6 +40,10 @@ Support multiple PATs for e.g. github.com. Foreach http url new entry is created
 	helper = osxkeychain
 	useHttpPath = true
 ```
+
+Restriction: Git include-if does not work with dev containers
+- Use env vars in DEV via direnv and map to container works
+
 # Support bin in home
 
 Copy bin files to ~/bin and add to path in ~/.zshrc

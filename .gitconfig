@@ -1,10 +1,10 @@
 [core]
 	filemode = false
 	autocrlf = input
-[includeIf "gitdir:~/DEV/"]
-	path = ~/.gitconfig-dev
-[includeIf "gitdir:~/job/ACME/"]
-	path = ~/.gitconfig-acme
+# [includeIf "gitdir:~/DEV/"]
+# 	path = ~/.gitconfig-dev
+# [includeIf "gitdir:~/job/ACME/"]
+# 	path = ~/.gitconfig-acme
 [credential]
 	helper = osxkeychain
 	useHttpPath = true
